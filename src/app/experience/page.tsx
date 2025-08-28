@@ -1,4 +1,5 @@
 import { degree, university, graduationPeriod, gpa } from "@/constants";
+import { getInternalPath } from "@/utils/assets";
 
 export default function Experience() {
   const experiences = [
@@ -173,7 +174,7 @@ export default function Experience() {
             to reach out if you'd like to discuss potential collaborations.
           </p>
           <a
-            href="/contact"
+            href={getInternalPath("/contact")}
             className="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-blue-700 transition-colors"
           >
             Get In Touch

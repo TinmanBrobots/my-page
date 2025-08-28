@@ -1,4 +1,4 @@
-import { getAssetPath } from '@/utils/assets';
+import { getAssetPath, getInternalPath } from '@/utils/assets';
 
 export default function Home() {
   return (
@@ -26,13 +26,13 @@ export default function Home() {
             </p>
             <div className="mt-10 flex justify-center lg:justify-start gap-4">
               <a
-                href="/projects"
+                href={getInternalPath("/projects")}
                 className="bg-blue-600 text-white px-8 py-3 rounded-lg font-medium hover:bg-blue-700 transition-colors"
               >
                 View My Work
               </a>
               <a
-                href="/contact"
+                href={getInternalPath("/contact")}
                 className="border border-gray-300 text-gray-700 px-8 py-3 rounded-lg font-medium hover:bg-gray-50 transition-colors"
               >
                 Get In Touch

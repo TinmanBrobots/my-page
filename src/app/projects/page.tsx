@@ -1,5 +1,5 @@
 import { githubUrl, twitterUrl } from "@/constants";
-import { getAssetPath } from "@/utils/assets";
+import { getAssetPath, getInternalPath } from "@/utils/assets";
 
 export default function Projects() {
   const projects = [
@@ -17,8 +17,8 @@ export default function Projects() {
         "REST APIs",
       ],
       github: [
-        "https://github.com/mattrobbins/ChaGenius-api",
-        "https://github.com/mattrobbins/ChaGenius-web",
+        "https://github.com/mattrobbins/ChatGenius-api",
+        "https://github.com/mattrobbins/ChatGenius-web",
       ],
       live: `${twitterUrl}/status/1880430265149096003`,
       featured: true,
@@ -355,7 +355,7 @@ export default function Projects() {
             others. Let's discuss how we can bring your ideas to life.
           </p>
           <a
-            href="/contact"
+            href={getInternalPath("/contact")}
             className="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-blue-700 transition-colors"
           >
             Start a Project
