@@ -1,4 +1,5 @@
 import { githubUrl, twitterUrl } from "@/constants";
+import { getAssetPath } from "@/utils/assets";
 
 export default function Projects() {
   const projects = [
@@ -6,7 +7,7 @@ export default function Projects() {
       title: "ChatGenius",
       description:
         "A Slack clone with AI capabilities. Built with React, Node.js, and third-party AI API integrations.",
-      image: "/images/slack.png",
+      image: getAssetPath('/images/slack.png'),
       technologies: [
         "React",
         "Node.js",
@@ -26,7 +27,7 @@ export default function Projects() {
       title: "Energy Infrastructure Detection",
       description:
         "Deep learning computer vision system for detecting energy infrastructure (wind turbines, solar panels) in satellite imagery. Trained models using crowd-sourced annotations and synthetic data generation. Results used for policy guidance in developing countries.",
-      image: "/images/satellite.jpeg",
+      image: getAssetPath('/images/satellite.jpeg'),
       technologies: [
         "Python",
         "PyTorch",
@@ -43,7 +44,7 @@ export default function Projects() {
       title: "Reduced Order Modeling",
       description:
         "Created a Python package for generating accurate and efficient predictions using reduced order models in dynamic systems. Includes mathematical proofs of smoothness guarantees and empirical validation of model accuracy.",
-      image: "/images/rom.jpg",
+      image: getAssetPath('/images/rom.jpg'),
       technologies: [
         "Python",
         "NumPy",

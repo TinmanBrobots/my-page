@@ -1,3 +1,5 @@
+import { getAssetPath } from '@/utils/assets';
+
 export default function Home() {
   return (
     <div className="min-h-screen">
@@ -7,7 +9,7 @@ export default function Home() {
           <div className="order-2 lg:order-1 flex justify-center">
             <div className="relative">
               <img
-                src="/images/profile.jpeg"
+                src={getAssetPath('/images/profile.jpeg')}
                 alt="Matt Robbins"
                 className="w-80 h-96 object-cover rounded-lg shadow-lg"
               />
